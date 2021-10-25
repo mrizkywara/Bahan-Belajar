@@ -11,17 +11,17 @@ class Produk
     public  $judul = "judul",                    // YANG UNGU = Visibility (Public, Private, Protected) 
         $penulis = "penulis",                //YANG MERAH = Judul, Penulis, Penerbit, dan Harga adalah PROPERTY  
         $penerbit = "penerbit",              // YANG HIJAU = Nilainya.
-        $harga = 0;                          // Menampilkan Property ada diline 34
+        $harga = 0;                          // Menampilkan Property ada diline 48
 
     public function sayHello()
     {                 // sayHello adalah METHOD.. Apabila fungsi ini diambil, dia akan menampilkan hello world
         return "Hello World!";              // perintah return (ungu) untuk mengembalikan nilai.
-    }                                           // Perintah pemanggilan method ada diline 36
+    }                                           // Perintah pemanggilan method ada diline 55
 
     public function getLabel()
     {
         return "$this->penulis, $this->penerbit";   //Ini untuk menampilkan property pakai method (supaya otomatis dan lebih simpel)   //penulis dan penerbit itu adalah nama propertynya, berarti dia menampilkan penulis dan penerbit saja
-    }                                               //Perintah Pemanggilan method ini ada di line 43
+    }                                               //Perintah Pemanggilan method ini ada di line 57
 }
 
 $produk1 = new Produk();  // $produk1 dan $produk2 adalah OBJECT/VARIABEL....  // new (ungu) adalah untuk membuat baru...Yang Produk (kuning) adalah nama classnya...  // Cara Baca: $produk1 adalah variabel baru didalam class Produk
