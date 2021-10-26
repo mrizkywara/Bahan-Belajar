@@ -5,12 +5,14 @@ CSS: <style> </style>
 Javascript: <script></script>
 Metadata: <meta></meta>
 
-//------------- TAG, ATRIBUT, VALUE, ELEMENT -----------------//
+//-------------                  BAB 1                -----------------//
+//------------- TAG, ATRIBUT, VALUE, ELEMENT, HEADING -----------------//
 
 <body bgcolor="red">         // body adalah NAMA TAG
 </body>                     // bgcolor adalah ATRIBUT
                            // red adalah NILAI/VALUE
   
+
 <h1> INI TULISAN </h1>        // <h1> Adalah tag mulai, </h1> Adalah Tag akhir
 <br>                          // INI TULISAN adalah Elemen (isiannya)
 <h2> INI TULISAN 2 </h2>      // <br> adalah Garis Baru
@@ -18,11 +20,12 @@ Metadata: <meta></meta>
 <h3> INI TULISAN 3 </h3>
 </p>                
   
+===================== ATRIBUT
 
-//---------------- ATRIBUT HTML -----------------//
 <a href="wara.com"> Rizky Web </a>    
 // <a> adakah tag mendefinisikan hyperlink
 // href adalah atribut menentukan URL
+  
   
  <img src="wara.jpg" alt="Foto Rizky" width="500" height="600">
  //img adalah Tag untuk gambar
@@ -30,14 +33,27 @@ Metadata: <meta></meta>
  // alt adalah atribut alternatif yang muncul apabila gambarnya tidak muncul
  // width height adalah atribut untuk menentukan ukuran    
   
+  
   <p title="Ini tulisan yang timbul"> INI TULISAN </p>
   // <p> adalah TAG paragraf
   // title adalah atribut untuk menampilkan tulisan bila mengarahkan mouse ke elemen
   // INI TULISAN adalah elemennya
   
+  
   <p title=' M "Rizky" Wara '></p>
   <p title=" M 'Rizky' Wara "></p>
   //Keduanya sama aja
+  
+===================== HEADING
+<h1>Heading 1</h1>        // <h1> mendefinisikan judul yang paling penting. 
+<h2>Heading 2</h2>        // <h6> mendefinisikan heading yang paling tidak penting.
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+                            
+<h1 style="font-size:60px;"> PAKAI STYLE </h1>
+// Menentukan ukuran heading
   
 ------------ Ringkasan Bab  -------------
 Semua elemen HTML dapat memiliki atribut
@@ -48,9 +64,60 @@ Semua elemen HTML dapat memiliki atribut
 * style atribut : digunakan untuk menambah gaya untuk elemen, seperti warna, font, ukuran, dan lebih
 * lang atribut dari <html> tag : menyatakan bahasa halaman Web
 * title atribut : mendefinisikan beberapa informasi tambahan tentang elemen
-  
+* <h1>heading sebaiknya digunakan untuk heading utama, diikuti <h2>heading, kemudian heading yang kurang penting <h3>, dan seterusnya.
+-----------------------------------------  
+                              | 
+                              |
+                              |  
+                              |
+                              |  
+                              |  
+                              | 
+ //-------------           BAB 2              -----------------//
+//-------------          HTML STYLE            -----------------//
  
-                                                             
+<tagname style="property:value;">  // Contoh Penulisannya 
+  
+<html>
+<body style="background-color:powderblue;">                 
+<h1 style="background-color:tomato;">Ini Judulnya</h1>
+<p style="background-color:tomato;">Ini Paragrafnya.</p>
+</body>
+</html>
+// Style pada <body> Mengganti Warna Background
+// Style pada <h1> dan <p> Mengganti Warna Backgroud pada elemen
+  
+<h1 style="color:blue;">Rizky</h1>
+<p style="color:red;">Wara</p>
+// Mengganti warna teks
+  
+<h1 style="font-family:verdana;">Ini Verdana</h1>
+<p style="font-family:courier;">Ini Courier.</p>
+// Mengganti Font
+  
+<h1 style="font-size:300%;">INI 300</h1>
+<p style="font-size:160%;">INI 160.</p>
+// Mengatur ukuran Teks
+  
+<h1 style="text-align:center;">INI DITENGAH</h1>
+<p style="text-align:right;">INI DIKANAN.</p>
+// Mengatur Posisi/Perataan
+   
+------------ Ringkasan Bab  -------------
+* Gunakan style : atribut untuk menata elemen HTML
+* Gunakan background-color : untuk warna latar belakang
+* Gunakan color : untuk warna teks
+* Gunakan font-family : untuk font teks
+* Gunakan font-size : untuk ukuran teks
+* Gunakan text-align : untuk perataan teks
+-----------------------------------------
+                              | 
+                              |
+                              |  
+                              |
+                              |  
+                              |  
+                              | 
                                                              
                                                              
                                                              
