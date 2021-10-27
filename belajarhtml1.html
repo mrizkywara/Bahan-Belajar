@@ -144,6 +144,142 @@ Semua elemen HTML dapat memiliki atribut
 * <sub> - Teks Subskrip
 * <sup> - Teks superskrip
 ---------------------------------------- 
+                              | 
+                              |
+                              |  
+                              |
+                              |  
+                              |  
+                              | 
+//-------------             BAB 4                -----------------//
+//-------------           HTML CSS             -----------------// 
+  
+
+====================  CSS INTERNAL
+* CSS internal digunakan untuk menentukan gaya untuk satu halaman HTML.
+* CSS internal didefinisikan di <head>bagian halaman HTML, di dalam <style>elemen.
+* Contoh berikut menyetel warna teks SEMUA <h1>elemen (pada halaman itu) menjadi biru, dan warna teks SEMUA <p>elemen menjadi merah. Selain itu, halaman akan ditampilkan dengan warna latar belakang "biru bubuk": 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>                                     // Untuk menandai bahwa ini CSS
+body {background-color: powderblue;}        
+h1   {color: blue;}                         // Ini CSS nya. Mengatur bahwa <h1> akan memiliki warna biru dan <p> warna merah.
+p    {color: red;}                          
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>                // Hasil elementnya akan sesuai dengan yang diatur di style (untuk stylenya)
+<p>This is a paragraph.</p>               
+
+</body>
+</html>
+
+  
+====================  CSS EKSTERNAL
+* Lembar gaya eksternal digunakan untuk menentukan gaya untuk banyak halaman HTML.
+* Untuk menggunakan lembar gaya eksternal, tambahkan tautan ke lembar gaya tersebut di <head> bagian setiap halaman HTML:
+  
+-- DALAM FILE HTML.html --                      // File Html untuk memanggil CSS
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">       // Harus buat dulu file khusus CSSnya, kemudian panggil kesini.
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+  
+-- DALAM FILE Style.css --              // File khusus untuk mengatur CSS nya
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+  
+====================  TAUTAN KE CSS EKSTERNAL
+
+<link rel="stylesheet" href="https://www.wara.com/html/styles.css">
+// Contoh menggunakan URL lengkap untuk menautkan ke lembar style
+  
+<link rel="stylesheet" href="/html/styles.css">
+// Contoh menautkan ke lembar style yang terletak di folder html di situs web saat ini
+  
+<link rel="stylesheet" href="styles.css">
+// Contoh menautkan ke lembar style yang terletak di folder yang sama dengan halaman saat ini
+  
+  
+====================  WARNA, FONT, UKURAN CSS
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: blue;                          // color : Properti CSS mendefinisikan warna teks yang akan digunakan.
+  font-family: verdana;                 // font-family : Properti CSS mendefinisikan font yang akan digunakan.
+  font-size: 300%;                      // font-size : Properti CSS mendefinisikan ukuran teks yang akan digunakan.
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+  
+  
+====================  BORDER, PADDING, MARGIN
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border: 2px solid powderblue;        // border : Properti CSS mendefinisikan batas di sekitar elemen HTML.
+  padding: 50px;                      // padding : Properti CSS mendefinisikan padding (spasi) antara teks dan perbatasan.
+  margin: 100px;                      // margin : Properti CSS mendefinisikan margin (spasi) di luar perbatasan.
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+------------ Ringkasan Bab  -------------
+* Gunakan style : atribut HTML untuk penataan sebaris
+* Gunakan <style> : elemen HTML untuk mendefinisikan CSS internal
+* Gunakan <link> : elemen HTML untuk merujuk ke file CSS eksternal
+* Gunakan <head> : elemen HTML untuk menyimpan elemen <style> dan <link>
+* Gunakan color : properti CSS untuk warna teks
+* Gunakan font-family : properti CSS untuk font teks
+* Gunakan font-size : properti CSS untuk ukuran teks
+* Gunakan border : properti CSS untuk perbatasan
+* Gunakan padding : properti CSS untuk ruang di dalam perbatasan
+* Gunakan margin : properti CSS untuk ruang di luar perbatasan
+---------------------------------------- 
   
                                                              
                                                              
